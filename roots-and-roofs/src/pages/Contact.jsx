@@ -1,49 +1,36 @@
-import { motion } from "framer-motion";
+import React from "react";
 import "./Contact.css";
 
-function Contact() {
+const Contact = () => {
   return (
     <div className="contact-container">
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="contact-heading"
-      >
-        Get in Touch
-      </motion.h1>
-
-      <motion.form
-        className="contact-form"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="form-group">
-          <input type="text" required />
-          <label>Name</label>
-        </div>
-
-        <div className="form-group">
-          <input type="email" required />
-          <label>Email</label>
-        </div>
-
-        <div className="form-group">
-          <textarea required rows="5"></textarea>
-          <label>Message</label>
-        </div>
-
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="submit-btn"
-        >
-          Send Message
-        </motion.button>
-      </motion.form>
+      <div className="contact-form-wrapper">
+        <h3 className="contact-subtitle">CONTACT</h3>
+        <h1 className="contact-title">
+          Want to join the Rooftop Club and access the most exclusive off-market solutions?
+        </h1>
+        <form className="contact-form">
+          <div className="input-row">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Last name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <div className="input-row">
+            <input type="text" placeholder="Phone" />
+            <input type="text" placeholder="Company" />
+            <select>
+              <option>Nation</option>
+              <option>India</option>
+              <option>USA</option>
+              <option>Italy</option>
+            </select>
+          </div>
+          <textarea placeholder="Message" rows="4" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   );
-}
+};
 
 export default Contact;
