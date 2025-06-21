@@ -41,7 +41,7 @@ function About() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <img src="https://source.unsplash.com/800x600/?luxury,villa" alt="About us" />
+          <img src="https://th.bing.com/th/id/OIP.37DdUk86ZA2M1AuecJPxFQHaHa?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="About us" />
         </motion.div>
       </div>
 
