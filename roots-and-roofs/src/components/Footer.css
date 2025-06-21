@@ -69,3 +69,19 @@
   font-size: 14px;
   color: #aaa;
 }
+/* Footer.css */
+.footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 0.8rem;
+    padding: 15px 5px;
+  }
+}
+
